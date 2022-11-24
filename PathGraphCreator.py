@@ -18,15 +18,18 @@ def NodeExtracter(Path):
 def PathEdges(Path):
     edges = pd.DataFrame()
     pos = 0
-    for i in Path:
-        if (type(i) == list):
+    
+    if(type(Path[0]) == list):
+        for i in Path:
             for k in range(0,len(i)-1,1):
                 edges[pos] = [i[k],i[k+1]]
                 pos = pos + 1
 
-        else:
-            edges[pos] = [i[0],i[1]]
-            
+    if(type(Path[0]) == int):
+        for i in range(0,len(Path)-1,1):
+            edges[pos] = [Path[i],Path[i+1]]
+            pos = pos + 1
+
     edges = edges.transpose()
     return edges
 
