@@ -1,6 +1,6 @@
 # Network Analysis: Airports Network
 
-This is a notebook to practice Network Analysis via the workshop in SCQ CSS 2022 Summer School.
+This is a notebook to practice Network Analysis via a workshop in [SCQ CSS 2022 Summer School lectures](https://socialcomquant.ku.edu.tr/2022-ss-lectures/).
 
 The notebook contains:
 + Node Degrees
